@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Meta Valorant</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" type="image/png" href="img/logogame.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <link rel="stylesheet" href="hocbootrap.css">
+    <script src="jquery.js"></script>
+    <style>
+        @media (max-width:700px) {
+            #textintro {
+                font-size: 80px;
+            }
+            .container p{
+            top: 40% !important;
+            left: 40% !important;
+            font-size: 20px !important;
+        }
+        }
+
+        #welcome {
+            color: white;
+            font-size: 30px;
+        }
+      
+
+        @media (max-width:450px) {
+            #textintro {
+                font-size: 70px;
+            }
+            .contentintro{
+                padding-top: 70% !important;
+            }
+
+            .intro button {
+                width: 50% !important;
+                height: 50px !important;
+            }
+            .container p{
+            top: 40% !important;
+            left: 41% !important;
+            font-size: 15px !important;
+        }
+        }
+        .container img{
+            border-radius: 5%;
+        }
+
+        .col-6{
+            position: relative;
+        }
+        .container p{
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            display:block;
+            text-align: center;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 43%;
+        }
+        .container-fluid .skill img{
+             width: 50%;
+             filter:brightness(0);
+             float: left;
+             margin-left: 25%;
+        }
+        .container-fluid .col-5{
+           border-radius: 20px;
+        }
+        .container-fluid .skill img:hover{
+            transform: scale(1.2);       
+         }
+          
+
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--NavBar-->
+    <div class="container-fluid" style="padding: 0px;">
+        <nav id="mainnav" class="navbar navbar-expand-md navbar-dark sticky-top" style="overflow: hidden;">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand">
+                    <img src="img/logomain.png" width="60px" alt="">
+                </a>
+                <button id="checktrue" class="navbar-toggler" data-toggle="collapse" data-target="#navbarReponsive">
+                    <i id="navicon" class="fas fa-bars"></i>
+                </button>
+            </div>
+
+
+            <!--Collapse-->
+            <div class="collapse navbar-collapse" id="navbarReponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2 ">
+                        <a class="nav-link" href="home.php">Home</a>
+                    </li>
+                    <li class="nav-item px-2 active ">
+                        <a class="nav-link" href="metaagent.html">
+                            Agent</a>
+                    </li>
+                    <li class="nav-item px-2 ">
+                        <a class="nav-link" href="#section3">Gun</a>
+                    </li>
+                    <li class="nav-item px-2 ">
+                        <a class="nav-link" href="metaMap.html">Map</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#section5">Support</a>
+                    </li>
+                    <div class="admin" style="width: 150px;display: block;margin-left: 20px; margin-top: 10px;">
+                        <img id="imguser" src="" alt="" width="30px" style="border-radius: 50%;">
+                        <a id="nameuser"  class="nav-link dropdown-toggle" style="width: 100px;float: right;margin-top: -10px;" data-toggle="dropdown" href="#"></a>
+                        <div onclick="checklogout()" class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Information</a>
+                            <a class="dropdown-item" href="#">Securyti</a>
+                            <a class="dropdown-item" id="logout" href="index.html">Log Out</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <!--Content-->
+     <div class="container-fluid">
+         <div class="row">
+             <div class="col-sm col-12">
+                 <img src="img/viper.webp" width="100%" alt="">
+             </div>
+             <div class="col-sm col-12 skill" style="background-color: rgb(250, 250, 250,0.5);">
+                 <div class="row">
+                    <div class="col" style="text-align: center;">
+                        <h2 class="text-white">VIPER : CONTROLLER</h2>
+                    </div>
+                 </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="img/phoenix_c.svg" alt="">
+                        </div>    
+                        <div class="col">
+                            <p style="color: black;">He builds a wall of fire that obscures the Enemy's view and heals himself</p>
+                        </div>                
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="img/phoenix_q.svg" alt="">
+                        </div>  
+                        <div class="col">
+                            <p style="color: black;" >Equip a flare orb that takes a curving path and detonates shortly after throwing. fire to curve the flare orb to the left, detonating and blinding any player who sees the orb.</p>
+                        </div>                    
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="img/phoenix_e.svg" alt="">
+                        </div>   
+                        <div class="col">
+                            <p style="color: black;" >Throws a fireball that deals damage to the enemy and heals himself</p>
+                        </div>                    
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="img/phoenix_x.svg" alt="">
+                        </div>  
+                        <div class="col">
+                          <p style="color: black;" >Instantly place a marker at Phoenix's location. while this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.</p>
+                        </div>                    
+                    </div>
+             </div>
+         </div>
+         <div class="container">
+            <h2 style="color: white;">Tips</h2>
+         <div class="row mt-5">
+             <div class="col">
+                 <video width="100%" src="img/_b_main.mp4" controls loop></video>
+             </div>
+         </div>
+         <div class="row my-5">
+            <div class="col">
+                <a href="" class="btn btn-danger">See more tips</a>
+            </div>
+        </div>
+        </div>
+
+     </div>
+
+    </div>
+
+         <!--Footer-->
+         <footer>
+            <div>
+                <span class="logo">
+                    <a href=""><img src="img/logomain.png" alt=""></a>
+                </span>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="link-cat" onclick="footerToggle(this)">
+                        <span class="footer-cat">PRODUCT</span>
+                    </div>
+                    <ul class="footer-cat-links">
+                        <li><a href=""><span>Download</span></a></li>
+                        <li><a href=""><span>GPI</span></a></li>
+                        <li><a href=""><span>Live Companion</span></a></li>
+                        <li><a href=""><span>Champions</span></a></li>
+                        <li><a href=""><span>Tier List</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="link-cat" onclick="footerToggle(this)">
+                        <span class="footer-cat">COMPANY</span>
+                    </div>
+                    <ul class="footer-cat-links">
+                        <li><a href=""><span>About</span></a></li>
+                        <li><a href=""><span>GPI</span></a></li>
+                        <li><a href=""><span>Jobs</span></a></li>
+                        <li><a href=""><span>Press</span></a></li>
+                        <li><a href=""><span>Club</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="link-cat" onclick="footerToggle(this)">
+                        <span class="footer-cat">OTHER</span>
+                    </div>
+                    <ul class="footer-cat-links">
+                        <li><a href=""><span>Founders Wall</span></a></li>
+                        <li><a href=""><span>Twitch Extension</span></a></li>
+                        <li><a href=""><span>Proving Ground</span></a></li>
+                        <li><a href=""><span>Ascendants</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="social-links social-1 col-8">
+                    <div class="row">
+                        <div class="col col-md-1 col-sm-3 col-xm-4 my-2 pl-0 pr-0"><a
+                                href="https://www.facebook.com/PlayVALORANT"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="col col-md-1 col-sm-3 col-xm-4 my-2 pl-0 pr-0"> <a
+                                href="https://twitter.com/playvalorant"><i class="fab fa-twitter"></i></a></div>
+                        <div class="col col-md-1 col-sm-3 col-xm-4 my-2 pl-0 pr-0"><a
+                                href="https://www.youtube.com/channel/UC8CX0LD98EDXl4UYX1MDCXg"><i
+                                    class="fab fa-youtube"></i></a></div>
+                        <div class="col col-md-1 col-sm-3 col-xm-4 my-2 pl-0 pr-0"><a
+                                href="https://www.instagram.com/playvalorantofficial/"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="col col-md-1 col-sm-3 col-xm-4 my-2 pl-0 pr-0"><a
+                                href="https://www.tumblr.com/tagged/valorant?sort=top"><i class="fab fa-tumblr"></i></a>
+                        </div>
+                        <div class="col col-md-1 col-sm-3 col-xm-4 my-2 pl-0 pr-0"><a
+                                href="https://discord.com/invite/valorant"><i class="fab fa-reddit-alien"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="copyright">
+                        &copy; 2020 Riot Games Inc. All rights reserved. Valorant and Riot Games, Inc. is a trademark or
+                        registered
+                        trademark of Riot Games, Inc
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="owner">
+                        <span>
+                            Designed by <a href="#">Thinh, Phuoc and Phuc</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
+<script src="hocbootrap.js"></script>
+ <script>
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("nav");
+        header.classList.toggle("sticky", window.scrollY > 0);
+        if (window.scrollY > 0) {
+            $("#navicon").css("color", "black");
+        } else {
+            $("#navicon").css("color", "white");
+        }
+    })
+</script>
